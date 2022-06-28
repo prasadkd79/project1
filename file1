@@ -1,6 +1,1 @@
-#!/bin/bash
-
-sudo su 
-yum update -y
-
-yum install git -y
+do need to change.
