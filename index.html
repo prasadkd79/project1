@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>‘काय झाडी, काय डोंगार, काय हॉटेल, ओकेमध्ये आहे</h1>
+
+<button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>sticker</h2>
+  <img src="sample.png" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+</body>
+</html>
